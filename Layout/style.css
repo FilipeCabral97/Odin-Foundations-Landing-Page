@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --main-bg-color: #1f2937;
+
+  --hero-main-text-color: #f9faf8;
+  --hero-main-text-fs: 48px;
+  --hero-main-text-fw: bold;
+
+  --hero-secondary-text-color: #e5e7eb;
+  --hero-secondary-text-fs: 18px;
+
+  --header-logo-text-color: var(--hero-main-text-color);
+  --header-logo-text-fs: 24px;
+
+  --call-to-action-btn-color: #3882f6;
+
+  --informative-header-text-color: var(--main-bg-color);
+  --informative-header-text-fs: 36px;
+  --informative-header-text-fw: bold;
+
+  --quote-section-bg-color: var(--hero-secondary-text-color);
+
+  --quote-text-color: var(--main-bg-color);
+  --quote-text-fs: 36px;
+  --quote-text-fw: light;
+  --quote-text-fstyle: italic;
+}
+
+/* ----- MAX-WIDTH CONTAINER ----- */
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ----- NAV ----- */
+
+nav {
+  background-color: var(--main-bg-color);
+  padding-top: 16px;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--header-logo-text-color);
+  font-size: var(--header-logo-text-fs);
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--hero-secondary-text-color);
+}
+
+/* ----- HERO ----- */
+
+.hero {
+  background-color: var(--main-bg-color);
+  padding: 90px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-text {
+  width: 48%;
+}
+
+.hero .row img {
+  width: 45%;
+  object-fit: cover;
+  object-position: 0 60%;
+  height: 250px;
+}
+
+.hero-text h1 {
+  color: var(--hero-main-text-color);
+  font-size: var(--hero-main-text-fs);
+}
+
+.hero-text p {
+  color: var(--hero-secondary-text-color);
+  font-size: var(--hero-secondary-text-fs);
+  margin-bottom: 12px;
+}
+
+/* ----- INFO SECTION ----- */
+
+.information {
+  padding: 70px 0;
+}
+
+.information-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.information-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.information h2 {
+  color: var(--informative-header-text-color);
+  font-size: var(--informative-header-text-fs);
+  font-weight: var(--informative-header-text-fw);
+  margin-bottom: 36px;
+}
+
+.img-block img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #3882f6;
+  border-radius: 15px;
+}
+
+.img-block p {
+  width: 150px;
+  color: var(--informative-header-text-color);
+  font-weight: light;
+}
+
+/* ----- QUOTE SECTION ----- */
+
+.quote {
+  background-color: var(--quote-section-bg-color);
+  padding: 90px 0;
+  
+}
+
+.quote-col {
+  display: flex;
+  justify-content: center;
+}
+
+.quote-container {
+  width: 80%;
+}
+
+.quote blockquote {
+  color: var(--quote-text-color);
+  font-size: var(--quote-text-fs);
+  font-weight: var(--quote-text-fw);
+  font-style: var(--quote-text-fstyle);
+  text-shadow: 0 0 1px var(--quote-text-color);
+  color: transparent;
+}
+
+.quote p {
+  font-weight: bold;
+  font-size: var(--header-logo-text-fs);
+  color: var(--quote-text-color);
+  text-align: end;
+}
+
+/* ----- CTA ----- */
+
+.action {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.action-card {
+  background-color: #3882f6;
+  border-radius: 10px;
+}
+
+.card-container {
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-text-block {
+  color: var(--hero-main-text-color);
+}
+
+.action-text-block h3 {
+  font-size: 22px;
+}
+
+.action-text-block p {
+  font-weight: lighter;
+}
+
+/* ----- BUTTONS ----- */
+
+.sign-up {
+  background-color: var(--call-to-action-btn-color);
+  font-size: var(--hero-secondary-text-fs);
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 30px;
+}
+
+.sign-up.secondary {
+  border: 2px solid white;
+}
